@@ -32,12 +32,12 @@
                         <td>{{$municipio->depa_nomb}}</td>
                         <td>
                             {{-- <a href="{{ route('municipios.edit', ['municipio'=>$municipio->muni_codi]) }}" class="btn btn-info">Editar </a> --}}
-                            {{-- <form action="{{ route('municipios.destroy', ['municipios' => $municipio->muni_codi]) }}"
+                            <form action="{{ route('municipios.destroy', ['municipio' => $municipio->muni_codi]) }}"
                                 method="POST" style="display: inline-block">
                                 @method('delete')
                                 @csrf
                                 <input class="btn btn-danger" type="submit" value="Delete">
-                            </form> --}}
+                            </form>
                         </td>
                     </tr>
                 @endforeach
