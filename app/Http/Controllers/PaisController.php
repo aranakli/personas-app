@@ -6,7 +6,7 @@ use App\Models\Comuna;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class PaisControler extends Controller
+class PaisController extends Controller
 {
     /**
      * Display a listing of the resource.

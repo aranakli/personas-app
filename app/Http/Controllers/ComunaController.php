@@ -14,8 +14,6 @@ class ComunaController extends Controller
     public function index()
     {
         // Trae todos los registros en el objeto $comunas
-        //
-        // $comunas = Comuna::all();
         $comunas = DB::table('tb_comuna')
             ->join('tb_municipio', 'tb_comuna.muni_codi', '=', 'tb_municipio.muni_codi')
             ->select('tb_comuna.*', 'tb_municipio.muni_nomb')

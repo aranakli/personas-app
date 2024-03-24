@@ -2,12 +2,14 @@
 
 use App\Http\Controllers\ComunaController;
 use App\Http\Controllers\MunicipioController;
+use App\Http\Controllers\DepartamentoController;
 use App\Models\Comuna;
 use App\Models\Municipio;
+use App\Models\Departamento;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Bienvenido');
 });
 
 // Rutas para Comunas
@@ -25,3 +27,11 @@ Route::get('/municipios/create', [MunicipioController::class, 'create'])->name('
 Route::delete('/municipios/{municipio}', [MunicipioController::class, 'destroy'])->name('municipios.destroy');
 Route::put('/municipios/{municipio}', [MunicipioController::class, 'update'])->name('municipios.update');
 Route::get('/municipios/{municipio}/edit', [MunicipioController::class, 'edit'])->name('municipios.edit');
+
+// Rutas para Departamentos
+Route::get('/departamentos', [DepartamentoController::class, 'index'])->name('departamentos.index');
+Route::post('/departamentos', [DepartamentoController::class, 'store'])->name('departamentos.store');
+Route::get('/departamentos/create', [DepartamentoController::class, 'create'])->name('departamentos.create');
+Route::delete('/departamentos/{departamento}', [DepartamentoController::class, 'destroy'])->name('departamentos.destroy');
+Route::put('/departamentos/{departamento}', [DepartamentoController::class, 'update'])->name('departamentos.update');
+Route::get('/departamentos/{departamento}/edit', [DepartamentoController::class, 'edit'])->name('departamentos.edit');
