@@ -14,7 +14,7 @@
   <body>
     <div class="container">
         <h1>Listado de Municipios</h1>
-        {{-- <a href="{{route('municipios.create')}}" class="btn btn-success">Crear Municipio</a> --}}
+        <a href="{{route('municipios.create')}}" class="btn btn-success">Crear Municipio</a>
         <table class="table">
             <thead>
                 <tr>
