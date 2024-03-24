@@ -29,7 +29,7 @@
                     <tr>
                         <th scope="row">{{$departamento->depa_codi}}</th>
                         <td>{{$departamento->depa_nomb}}</td>
-                        <td>{{$departamento->pais_codi}}</td>
+                        <td>{{$departamento->pais_nomb}}</td>
                         <td>
                             {{-- <a href="{{ route('comunas.edit', ['comuna'=>$comuna->comu_codi]) }}" class="btn btn-info">Editar </a>
                             <form action="{{ route('comunas.destroy', ['comuna' => $comuna->comu_codi]) }}"
