@@ -26,7 +26,7 @@ class PaisController extends Controller
      */
     public function create()
     {
-        // Crear una nueva comuna
+        // Crear un nuevo pais
         $municipios = DB::table('tb_municipio')
             ->orderBy('muni_nomb')
             ->get();

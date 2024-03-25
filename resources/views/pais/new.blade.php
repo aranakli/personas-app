@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>Nueva Comuna</title>
+    <title>Nuevo Pais</title>
 </head>
 
 
@@ -21,7 +21,7 @@
             @csrf
             <div class="mb-3">
                 <label for="id" class="form-label">Código</label>
-                <input type="text"  require class="form-control" maxlength="3" style="text-transform:uppercase" id="id" aria-describedby="idHelp" name="id" placeholder="Codigo del Pais (tres letras)">
+                <input type="text"  require class="form-control" maxlength="3" style="text-transform:uppercase" id="id" aria-describedby="idHelp" name="id" placeholder="Código del Pais (tres letras)">
                 <div id="idHelp" class="form-text">Código del Pais</div>
             </div>
             <div class="mb-3">
