@@ -20,7 +20,7 @@
             @method('put')
             @csrf
             <div class="mb-3">
-                <label for="id" class="form-label">Código</label>
+                <label for="id" class="form-label">Código {{ $comuna->comu_codi }}</label>
                 <input type="text" class="form-control" id="id" aria-describedby="idHelp" name="id" disabled="disabled" value="{{ $comuna->comu_codi}}">
                 <div id="idHelp" class="form-text">Código de la comuna</div>
             </div>

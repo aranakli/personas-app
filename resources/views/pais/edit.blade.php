@@ -15,13 +15,14 @@
 
 <body>
     <div class="container">
-        <h1>Editar Pais {{ $pais }}</h1>
+        <h1>Editar Pais</h1>
         <form method="POST" action="{{ route('paises.update', ['pais' => $pais->pais_codi]) }}">
             @method('put')
             @csrf
             <div class="mb-3">
-                <label for="id" class="form-label">Código</label>
+                <label for="pais" class="form-label">Código</label>
                 <input type="text" class="form-control" id="id" aria-describedby="idHelp" name="id" disabled="disabled" value="{{ $pais->pais_codi}}">
+
                 <div id="idHelp" class="form-text">Código de pais</div>
             </div>
             <div class="mb-3">

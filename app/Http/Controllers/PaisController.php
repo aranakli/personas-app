@@ -63,7 +63,7 @@ class PaisController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
         //Edita un pais
         $pais = Pais::find($id);
