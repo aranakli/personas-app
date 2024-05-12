@@ -27,18 +27,18 @@
                 @method('put')
                 @csrf
                 <div class="mb-3">
-                    <label for="id" class="form-text">Código {{ $comuna->comu_codi }}</label>
+                    <label for="id" class="p-1 text-gray-900 dark:text-gray-100">Código {{ $comuna->comu_codi }}</label>
                     <input type="text" class="form-control" id="id" aria-describedby="idHelp" name="id"
                         disabled="disabled" value="{{ $comuna->comu_codi }}">
-                    <div id="idHelp" class="form-text">Código de la comuna</div>
+                    <div id="idHelp" class="p-1 text-gray-900 dark:text-gray-100">Código de la comuna</div>
                 </div>
                 <div class="mb-3">
-                    <label for="name" class="form-text">Comuna</label>
+                    <label for="name" class="p-1 text-gray-900 dark:text-gray-100">Comuna</label>
                     <input type="text" require class="form-control" id="name" aria-describedby="nameHelp"
                         name="name" placeholder="Nombre de la comuna" value="{{ $comuna->comu_nomb }}">
                 </div>
 
-                <label for="municipio" class="form-text">Municipio:</label>
+                <label for="municipio" class="p-1 text-gray-900 dark:text-gray-100">Municipio:</label>
                 <select class="form-select" id="municipio" name="code" require>
                     <option selected disabled value="">Seleccione uno . . .</option>
                     @foreach ($municipios as $municipio)
